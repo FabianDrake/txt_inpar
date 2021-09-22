@@ -1,0 +1,24 @@
+<html>
+
+    <input type="number" onchange="espar(this.value)">
+    <span id="color">El numero es negativo</span>
+   
+    <script>
+        function espar (valor){
+            color = document.getElementById("color")
+
+            if(valor>=0){
+                color.style.color="black"
+            }else{
+                color.style.color="red"
+            }
+            if(valor%2===0){
+                return false;
+            }else{
+                alert("Es inpar")
+            }
+        }
+    </script>
+
+</html>
+
